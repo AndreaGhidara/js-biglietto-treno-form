@@ -14,7 +14,7 @@ btn.addEventListener("click", function() {
     let age = document.getElementById("age").value;
     let priceVoyage = km * 0.21;
     
-    if ( name == "" || km == "" || age == "test") {
+    if ( name == "" || km == "" || age == "test" ) {
         alert("non hai inserito correttamente i dati, riprovare");
         location.reload();
     } else {

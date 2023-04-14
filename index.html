@@ -17,7 +17,7 @@
 
                 <div class="form-group col-12">
                     <label for="name">Inserisci Nome e Cognome</label>
-                    <input type="text" class="form-control" id="name" placeholder="">
+                    <input onkeydown="return /[a-z]/i.test(event.key)" type="text" class="form-control" id="name"  placeholder="">
                 </div>
 
                 <div class="form-group col-12">
@@ -37,7 +37,7 @@
 
             </div>
             <div class="d-flex p-3 justify-content-center gap-1">
-                <div class="btn w-50 btn-outline-success">Invia</div>
+                <button class="btn w-50 btn-outline-success">Invia</button>
                 <div class="btn w-50 reset btn-outline-danger">Resetta</div>
             </div>
         </form>
