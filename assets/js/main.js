@@ -13,8 +13,8 @@ btn.addEventListener("click", function() {
     let km = document.getElementById("km").value;
     let age = document.getElementById("age").value;
     let priceVoyage = km * 0.21;
-    
-    if ( name == "" || km == "" || age == "test" ) {
+
+    if ( name == "" || km == "" || age == "test") {
         alert("non hai inserito correttamente i dati, riprovare");
         location.reload();
     } else {
@@ -24,7 +24,7 @@ btn.addEventListener("click", function() {
         if ( age < 18 ) {
             priceVoyage -= priceVoyage / 100 * 20;
             document.querySelector(".offerta").innerHTML = "Promo Giovani";
-        
+
         } else if ( age >= 65 ) {
             priceVoyage -= priceVoyage / 100 * 60;
             document.querySelector(".offerta").innerHTML = "Promo Over 65";
