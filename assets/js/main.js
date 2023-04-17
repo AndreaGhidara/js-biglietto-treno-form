@@ -1,14 +1,23 @@
 const btn = document.querySelector(".btn");
-const reset = document.querySelector(".reset");
+const reset = document.querySelector(".reset")
+
 
 let wagonTrain = (Math.floor(Math.random() * 10) + 1);
-// console.log(wagonTrain);
+console.log(wagonTrain);
 
 let cpCode = Math.floor(Math.random()*90000) + 10000;
-// console.log(cpCode);
+console.log(cpCode);
 
 
 btn.addEventListener("click", function() {
+
+    document.querySelector(".nameOnTiket").innerHTML = "";
+    document.querySelector(".offerta").innerText = "";
+    document.querySelector(".carrozza").innerHTML = "";
+    document.querySelector(".codiceCp").innerHTML = "";
+    document.querySelector(".priceTikets").innerHTML = "";
+
+
     let name = document.getElementById("name").value;
     let km = document.getElementById("km").value;
     let age = document.getElementById("age").value;
@@ -36,5 +45,6 @@ btn.addEventListener("click", function() {
 })
 
 reset.addEventListener("click", function(){
-    location.reload();
-})
+        location.reload();
+    })
+    
